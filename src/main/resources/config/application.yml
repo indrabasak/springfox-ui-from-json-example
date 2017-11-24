@@ -25,9 +25,9 @@ jpa:
       hibernate:
         flushMode: AUTO
 
-#logging:
-#  level:
-#    org.springframework: DEBUG
+logging:
+  level:
+    org.springframework: DEBUG
 
 swagger:
   json:

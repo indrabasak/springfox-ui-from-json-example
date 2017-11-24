@@ -4,8 +4,8 @@
 
 SpringFox (Swagger) UI From JSON File Example
 =============================================
-This is an example on how to use [SpringFox](http://springfox.github.io/springfox/) 
-UI from API defintion stored in a static JSON file.
+This is an example on generating [SpringFox/Swagger](http://springfox.github.io/springfox/) 
+UI from API definition stored in a static JSON file.
 
 ### SpringFox Dependency
 Only Springfox dependency required in this example is the `springfox-swagger-ui`
@@ -25,7 +25,20 @@ The `swagger.json` file containing the JSON definition is located under
 modifying `swagger.json.location` property in `application.yml` file.
 
 ### Swagger Controller
-You need a Swagger
+You need a custom controller to fullfill the following requests from 
+`swagger-ui.html`:
+
+1. `/swagger-resources` endpoint which returns a JSON string representing a 
+`springfox.documentation.swagger.web.SwaggerResource` object.
+
+1. `/swagger-resources/configuration/ui` endpoint which returns a JSON string 
+representing a `springfox.documentation.swagger.web.UiConfiguration` object.
+
+1. `/swagger-resources/configuration/security` endpoint which returns a JSON string 
+   representing a `springfox.documentation.swagger.web.SecurityConfiguration` object.
+   
+1. `/v2/api-docs` endpoint which returns a JSON represeting swagger API
+definition.   
 
 ### Build
 To build the JAR, execute the following command from the parent directory:
@@ -48,7 +61,7 @@ You can view the Swagger UI at `http://localhost:8080/swagger-ui.html`.
 
 
 ##### Swagger JSON
-You can view Swagger JSOn doc at `http://localhost:8080/v2/api-docs?group=book`
+You can view Swagger JSON doc at `http://localhost:8080/v2/api-docs?group=book`
 
 
 [travis-badge]: https://travis-ci.org/indrabasak/springfox-ui-from-json-example.svg?branch=master
