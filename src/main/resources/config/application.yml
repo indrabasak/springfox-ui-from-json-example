@@ -1,0 +1,34 @@
+# use a random unassigned HTTP port by scanning for free port
+server:
+  port: 8080
+
+
+# For Spring Actuator /info endpoint
+info:
+    artifact: springfox-gson
+    name: springfox-gson
+    description: Springfox Gson Example
+    version: 1.0.0
+
+datasource:
+  validationQuery: SELECT 1
+  initialSize: 1
+  maxActive: 3
+  testWhileIdle: true
+  testOnBorrow: true
+
+jpa:
+  show-sql: true
+  format_sql: true
+  properties:
+    org:
+      hibernate:
+        flushMode: AUTO
+
+#logging:
+#  level:
+#    org.springframework: DEBUG
+
+swagger:
+  json:
+    location: config/swagger.json
