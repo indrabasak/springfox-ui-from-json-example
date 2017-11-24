@@ -51,7 +51,7 @@ mvn clean install
 To run the application fromm command line,
 
 ```
-java -jar target/springfox-gson-example-1.0.0.jar
+java -jar target/springfox-ui-from-json-example-1.0.0.jar
 ```
 
 ### Access Swagger Endpoints

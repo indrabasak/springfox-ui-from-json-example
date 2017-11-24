@@ -2,7 +2,7 @@
   "swagger": "2.0",
   "info": {
     "description": "Book API",
-    "title": "Example of Swagger UI from Generated from JSON"
+    "title": "Example of Swagger UI Generated from JSON"
   },
   "host": "localhost:8080",
   "basePath": "/",
