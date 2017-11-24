@@ -28,16 +28,16 @@ modifying `swagger.json.location` property in `application.yml` file.
 A custom controller having the following endpoints to meet all the 
 requests from the `swagger-ui.html`:
 
-1. `/swagger-resources` endpoint which returns a JSON string representing a 
+1. `/swagger-resources` endpoint which returns a JSON string representation of a 
 `springfox.documentation.swagger.web.SwaggerResource` object.
 
 1. `/swagger-resources/configuration/ui` endpoint which returns a JSON string 
-representing a `springfox.documentation.swagger.web.UiConfiguration` object.
+representation of a `springfox.documentation.swagger.web.UiConfiguration` object.
 
 1. `/swagger-resources/configuration/security` endpoint which returns a JSON string 
-   representing a `springfox.documentation.swagger.web.SecurityConfiguration` object.
+   representation of a `springfox.documentation.swagger.web.SecurityConfiguration` object.
    
-1. `/v2/api-docs` endpoint which returns a JSON representing Swagger API
+1. `/v2/api-docs` endpoint which returns a JSON representation of a Swagger API
 definition.   
 
 ### Build
