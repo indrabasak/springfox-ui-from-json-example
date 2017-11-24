@@ -20,12 +20,12 @@ JAR.
 ```
 
 ### Swagger JSON File
-The `swagger.json` file containing the JSON definition is located under
+A `swagger.json` file containing the JSON definition is located under
 `resources/config` folder. The location of the file can be changed by 
 modifying `swagger.json.location` property in `application.yml` file.
 
 ### Swagger Controller
-You need a custom controller to fullfill the following requests from 
+A custom controller the following endpoints to meet all the requests from 
 `swagger-ui.html`:
 
 1. `/swagger-resources` endpoint which returns a JSON string representing a 
@@ -37,7 +37,7 @@ representing a `springfox.documentation.swagger.web.UiConfiguration` object.
 1. `/swagger-resources/configuration/security` endpoint which returns a JSON string 
    representing a `springfox.documentation.swagger.web.SecurityConfiguration` object.
    
-1. `/v2/api-docs` endpoint which returns a JSON represeting swagger API
+1. `/v2/api-docs` endpoint which returns a JSON representing Swagger API
 definition.   
 
 ### Build
